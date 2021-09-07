@@ -6,4 +6,11 @@ class Validation{
         }
 
     }
+
+    static isValidNumber(input,message){
+        if(input== null ||isNaN(input)||input<0 ){
+            throw new Error(message);
+        }
+    }
+    
 }
